@@ -29,14 +29,28 @@ The app also provides information people should know about Covid-19 in the form 
 Clone this repo
 ```
 git clone https://github.com/heyif/Dash-Web-Application.git
+cd Dash-Web-Application
 ```
 
 Create a conda env
 ```
 conda create -n Dash-Web-Application python=3.6.7
 conda activate Dash-Web-Application
-pip install -r requirements.txt
+# Or
+source activate Dash-Web-Application
 ```
+Install required packages
+```
+pip install xgboost
+# if you have problem with installing xgboost on Mac OS
+conda install -c conda-forge xgboost
+pip install pandas 
+pip install dash
+pip install dash-bootstrap-components
+pip install dash-core-components
+pip install dash-html-components
+```
+
 Run the app
 ```
 python app.py
